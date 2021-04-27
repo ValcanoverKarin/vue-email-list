@@ -13,7 +13,8 @@ var app = new Vue (
 
         },
         mounted() {
-
+            //1h. aggiungo for per stampare le email 10 volte 
+            for (let i = 0; i < 10; i++) {
                 //1c. faccio la richiesta
                 axios
                     //1d. aggiungo l' apposita API di Boolean
@@ -26,7 +27,7 @@ var app = new Vue (
                         this.eMails.push(result.response);
                 });
             
-
+            }
         }
     }
 );
