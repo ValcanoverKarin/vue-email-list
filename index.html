@@ -11,6 +11,11 @@
 </head>
 <body>
     <div id="root">
+        <div>email list:</div>
+        <ul>
+            <!-------1b. aggiungo il v-for per ciclare un array e un oggetto-------->
+            <li v-for="email in eMails">{{ email }}</li>
+        </ul>
     </div>
 
     <script src="js/script.js"></script>
